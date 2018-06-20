@@ -101,6 +101,24 @@ function summit() {
 stop();
 // display the all variabels on html page
     document.getElementById("l1").innerHTML = "<h3>Wrong:" + lose + " </h3>";
+//  if statment
+    if(lose>2)
+    {
+// make one div and put the gif  
+        var img1=$("<img>");
+    img1.attr("src","assets/image/sorry.gif");
+    img1.attr("height", "300px");
+     $(".img1").append(img1);
+    }
     document.getElementById("w1").innerHTML = "<h3>win:" + win + "  </h3>";
+// if statment
+    if(win>2)
+    {
+// make second div and put the  gif
+        var img1=$("<img>");
+    img1.attr("src","assets/image/congo.gif");
+    img1.attr("height","300px");
+     $(".img1").append(img1);
+    }
     document.getElementById("u1").innerHTML="<h3>Unanswred : " + un + "</h3>";
 }
